@@ -1,0 +1,19 @@
+1.Write a SQL query to find duplicate records
+
+SELECT column1, column2, column3, COUNT(*) 
+FROM my_table 
+GROUP BY column1, column2, column3 
+HAVING COUNT(*) > 1;
+
+2.Print max salary for a particular department 
+
+ SELECT MAX(salary) as max_salary
+FROM employees
+WHERE department = 'department_name';
+
+3.What is Query to display last 5 Records from Employee table?
+
+SELECT * FROM (
+  SELECT * FROM Employee ORDER BY id DESC
+) WHERE ROWNUM <= 5;
+
