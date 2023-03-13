@@ -9,17 +9,9 @@ public class MatrixAddition {
       for (int i = 0; i < rows; i++) {
          for (int j = 0; j < columns; j++) {
             sum[i][j] = firstMatrix[i][j] + secondMatrix[i][j];
-         }
-      }
+            System.out.print(sum[i][j]+" ");
+         }System.out.println();
 
-      // Displaying the result
-      System.out.println("Sum of matrices is: ");
-      for (int[] row : sum) {
-         for (int column : row) {
-            System.out.print(column + "    ");
-         }
-         System.out.println();
-      }
+     }
    }
 }
-
